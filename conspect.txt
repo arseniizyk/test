@@ -1,0 +1,169 @@
+HTML
+<head> - характеристики сайта по сути
+то что видят поисковые системы
+    <meta> - мета данные, строится по типу:
+    <meta name="author" content="Arsenii">
+    имеет параметры:
+        charset="utf-8" кодировка
+        author
+        decription
+        keywords
+Тело сайта 
+<body>
+    имеет параметры:
+    <h1> - заголовок, имеет параметры до <h6> от большего к меньшему
+    <p> - просто текст имеет параметры:
+      <b> - bold/жирный
+      <strong> - как <b>
+      <em> - курсив
+      <i> - курсив так же 
+      <strike> - перечеркнутый текст
+      <sub> - сделать текст ниже
+      <sup> - сделать текст выше
+      <br> перенос строки, одиночный
+      <big> делает чуть чуть больше
+      <small> делает текст меньше
+      <pre> - делает текст как под код(вывод текста с учетом всех пробелов, отступов и.т.д)
+      <code> - текст под код
+    <hr> - создает горизонтальную линию
+  <abbr title="">TEXT</abbr> - при наведении на надпись 
+                                покажется текст
+  <address> - адрес
+                        СПИСКИ                                 
+  <ol> - пронумерованный список, атрибуты:
+    start = "2" - начинаться список будет с 2
+    type - тип, например можно "a" и будет список a,b,c,d, i - римские цифры
+  <ul> - непронумерованный список атрибуты:
+    circle,square,
+  <li> - элементы списка
+  <a> - создание ссылки
+    атрибут href - создание ссылки 
+    имеет так же атрибут target - как будет совершен переход по ссылке:
+      _self - в этой же вкладке переход на ссылку
+      _blank - в другой вкладке
+    якорь:
+      <a href="#dekocsoff">Вниз</a><br />
+      кучакода
+      кучакода
+      кучакода
+      кучакода
+      кучакода
+      кучакода
+      <a name="dekocsoff"></a>
+  mailto:email отправить на почту
+  <a href="mailto:arseniizyk@gmail.com">Написать на почту</a>
+
+
+  таблицы
+  
+    <table border="5">
+      <thead align="center">
+        <tr>
+          <th>Имя</th>
+          <th>Фамилия</th>
+        </tr>
+      </thead>
+      <tbody align="center">
+        <tr>
+          <td>Arsenii</td>
+          <td>Zhuk</td>
+        </tr>
+      </tbody>
+      <tfoot align="center">
+        <tr>
+          <td>Last</td>
+          <td>One</td>
+        </tr>
+      </tfoot>
+
+подключение css - head <link rel="stylesheet" href="/css/main.css">
+подключение javascript - body <script>
+
+<div> - создания блока для css
+<span> - обернуть куски блока для css
+
+
+<form action="" method="post/get"> - создание формы  
+2 обязательных атрибута
+в action можно указать страницу которая будет обрабатывать данные из формы
+в method указать метод передачи данных
+  <label> - создание надписи над окном
+    атрибут for="idinput" - указать к какому id обращаться
+  <input type=""> - создание самого окна ввода
+      имеет атрибут placeholder - будет написано что-то внутри окна input
+      value - будет изначально написано что-либо в окне
+      maxlength="" - макс кол-во символов
+      hidden - скрыть поле
+      disabled - поле будет отображаться но в него нельзя будет ничего написать
+      readonly - только читать но нельзя ничего записать
+      name - дать функциональное имя для окна ввода
+      id - уникальный идентификатор объекта
+      все тайпы:
+        <input type="button">
+        <input type="checkbox"> 
+        <input type="color">
+        <input type="date">
+        <input type="datetime-local">
+        <input type="email">
+        <input type="file">
+        <input type="hidden">
+        <input type="image">
+        <input type="month">
+        <input type="number">
+        <input type="password"> - кружочки вместо символов
+        <input type="radio"> чтобы не указывать несколько кнопок, можно просто дать им один name 
+        <input type="range">
+        <input type="reset">
+        <input type="search">
+        <input type="submit">
+        <input type="tel">
+        <input type="text">
+        <input type="time">
+        <input type="url">
+        <input type="week">
+      <textarea></textarea> служит для ввода большого текста
+      <button> - создать кнопку - лучше использовать вне форм
+      <select> создать список, имеет атрибуты multiple(несколько вариантов выбора) и size(длина списка)
+        <option> - создать элемент списка, имеет атрибуты:
+          disabled - выключено
+          selected - выбрано по умолчанию
+  <header> - шапка сайта
+  <main> - основная часть сайта
+  <aside> - боковая часть сайта
+  <footer> - футер
+  <progress></progress> - создание прогресс-бара, атрибуты:
+    max - число необходимое
+    value - число сейчас
+  <details></details> - позволяет сделать скрытый текст выпадающий после кнопки
+    <summary>Подробнее</summary>
+    Text
+
+    css 
+    # - обращаться к id
+    . - обращаться к class
+
+    свойства классов
+    .nameclass
+    .nameclass:hover(наведение)
+    .nameclass:hover нажатие
+    .nameclass:visited - после нажатия
+    .input:focus - когда курсор в поле ввода
+    .input:disabled - когда поле неактивно
+    .input:required - только обязательное для заполнения поле(required в конце input)
+    :empty - пустые абзацы
+    p.text:not(empty) - не пустые
+
+    псевдоэлементы - 
+    after:: - до элемента
+    content: "text"; - невыделяемый текст
+    before:: - после элемента
+    :first of type - первый тег
+
+
+    background-repeat:no-repeat - не повторять
+    background-image: фоновая картинку
+    background: можно писать свойства в одну строку
+    height - высота
+    background-size: - размер фона 
+     cover - растянуть
+    background-attachment - fixed - зафиксировать на экране
