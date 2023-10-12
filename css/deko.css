@@ -6,7 +6,7 @@
 }
 .wapka {
   position: absolute;
-  background-image: url(/images/deko.png);
+  background-image: url(images/deko.png);
   width: 100%;
   z-index: -1;
   min-height: 105vh;
@@ -18,7 +18,7 @@
 .wapkadanek {
   position: absolute;
   z-index: -1;
-  background-image: url(/images/danek.jpg);
+  background-image: url(images/danek.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
